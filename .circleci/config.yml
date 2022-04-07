@@ -100,7 +100,7 @@ jobs:
 
   test-frontend:
     docker:
-      - image: circleci/node:5.0.2
+      - image: circleci/node:13.11.0
     steps:
       - checkout
       - restore_cache:
@@ -114,7 +114,7 @@ jobs:
 
   test-backend:
     docker:
-      - image: circleci/node:5.0.2
+      - image: circleci/node:13.11.0
     steps:
       - checkout
       - restore_cache:
